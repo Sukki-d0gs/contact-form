@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400&family=Roboto:wght@100;300;400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  min-height: 100vh;
+  background: linear-gradient(to right top, #6577df, #756ceb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(2rem);
+  border-radius: 2rem;
+  z-index: 2;
+  text-align: center;
+  font-family: "Roboto", monospace;
+}
+
+.form {
+  margin: 8% 10% 10% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Roboto Slab", monospace;
+  letter-spacing: 5px;
+  margin-top: 10%;
+  color: white;
+  font-size: 60px;
+}
+
+input {
+  border: solid rgba(0, 0, 0, 0.1) 1px;
+  border-radius: 12px;
+  padding: 20px;
+  width: 70%;
+  height: 5vh;
+}
+
+button {
+  border: none;
+  background: #2701af;
+  border-radius: 15px;
+  color: white;
+  width: 70%;
+  height: 2.5rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.email,
+.pass,
+.repass {
+  margin-top: 1rem;
+}
+
+.circle1,
+.circle2 {
+  position: absolute;
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 5%;
+  right: 15%;
+}
+
+.circle2 {
+  bottom: 5%;
+  left: 10%;
+}
